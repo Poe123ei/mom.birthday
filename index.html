@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Mom ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    overflow:hidden;
+    height:100vh;
+    background:linear-gradient(135deg,#ffd6e8,#fff4d6,#ffe7f7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* Card */
+
+.card{
+    width:750px;
+    max-width:90%;
+    background:rgba(255,255,255,.3);
+    backdrop-filter:blur(15px);
+    padding:45px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+    animation:float 4s infinite;
+    transition:1s;
+}
+
+
+@keyframes float{
+
+50%{
+transform:translateY(-10px);
+}
+
+}
+
+
+.hide{
+
+opacity:0;
+transform:scale(.5);
+pointer-events:none;
+
+}
+
+
+
+h1{
+
+font-size:50px;
+color:#ff2f6d;
+text-shadow:0 0 20px pink;
+
+}
+
+
+h2{
+
+color:#ff6699;
+margin:20px;
+
+}
+
+
+p{
+
+font-size:20px;
+line-height:1.8;
+color:#555;
+
+}
+
+
+
+button{
+
+margin-top:30px;
+padding:15px 35px;
+border:none;
+border-radius:50px;
+background:#ff4f88;
+color:white;
+font-size:18px;
+cursor:pointer;
+
+}
+
+
+button:hover{
+
+transform:scale(1.1);
+background:#ff2d6b;
+
+}
+
+
+
+/* Surprise Page */
+
+
+#surprisePage{
+
+position:absolute;
+text-align:center;
+opacity:0;
+transform:scale(.5);
+transition:1.5s;
+pointer-events:none;
+
+}
+
+
+#surprisePage.show{
+
+opacity:1;
+transform:scale(1);
+pointer-events:auto;
+
+}
+
+
+
+.photo{
+
+width:260px;
+height:260px;
+object-fit:cover;
+border-radius:50%;
+border:8px solid white;
+box-shadow:0 0 40px pink;
+
+}
+
+
+
+.special{
+
+margin-top:25px;
+background:rgba(255,255,255,.4);
+padding:30px;
+border-radius:25px;
+font-size:22px;
+line-height:1.8;
+color:#ff3366;
+
+}
+
+
+
+/* Hearts */
+
+
+.heart{
+
+position:absolute;
+color:pink;
+font-size:25px;
+animation:rise linear infinite;
+
+}
+
+
+@keyframes rise{
+
+from{
+
+transform:translateY(100vh) scale(.5);
+opacity:1;
+
+}
+
+to{
+
+transform:translateY(-120vh) scale(1.5);
+opacity:0;
+
+}
+
+}
+
+
+
+/* Confetti */
+
+
+.confetti{
+
+position:absolute;
+width:10px;
+height:10px;
+animation:fall linear forwards;
+
+}
+
+
+@keyframes fall{
+
+to{
+
+transform:translateY(110vh) rotate(720deg);
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="card" id="card">
+
+
+<h1>
+🎂 Happy Birthday Mom 🎂
+</h1>
+
+
+<h2>
+You are my greatest blessing ❤️
+</h2>
+
+
+<p>
+
+Dear Mom,<br><br>
+
+
+ပျော်ရွှင်ဖွယ် မွေးနေ့လေး ဖြစ်ပါစေ အမေ။ 🎂💐
+
+<br><br>
+
+အမေက သမီးအတွက် အမြဲတမ်း အားကိုးရာ၊ နွေးထွေးတဲ့ အိမ်လေးနဲ့ ဘဝရဲ့ အကြီးမားဆုံး လက်ဆောင်ပါ။
+
+<br><br>
+
+အမေ့ရဲ့ မေတ္တာ၊ အနစ်နာခံမှု၊ ဂရုစိုက်မှုတွေအတွက် သမီး အမြဲကျေးဇူးတင်ပါတယ်။
+
+<br><br>
+
+ဒီမွေးနေ့ကစပြီး အမေ ကျန်းမာပျော်ရွှင်ပြီး စိတ်ချမ်းသာမှုတွေနဲ့ ပြည့်စုံပါစေ။
+
+<br><br>
+
+အမေ့ကို သမီး အရမ်းချစ်ပါတယ် ❤️
+
+</p>
+
+
+<button onclick="showSurprise()">
+
+🎁 Click for a Surprise
+
+</button>
+
+
+</div>
+
+
+
+
+
+<!-- Surprise -->
+
+
+<div id="surprisePage">
+
+
+<img src="MOM.jpg" class="photo">
+
+
+<div class="special">
+
+
+🌸 Happy Birthday အမေ 🌸
+<br><br>
+
+အမေဟာ သမီးဘဝရဲ့ အရေးကြီးဆုံးလူတစ်ယောက်ပါ။
+
+<br>
+
+အမေ ပေးခဲ့တဲ့ မေတ္တာနဲ့ အားပေးမှုတွေကို
+ဘယ်တော့မှ မမေ့ပါဘူး။
+
+<br><br>
+
+အမေ့ဘဝမှာ ပျော်ရွှင်ခြင်း၊
+ကျန်းမာခြင်း၊ အေးချမ်းခြင်းတွေ
+အမြဲပြည့်နေပါစေ။
+
+<br><br>
+
+သမီး အမေ့ကို အရမ်းချစ်ပါတယ် ❤️
+
+<br><br>
+
+🎂🌷 Happy Birthday My Beautiful Mom 🌷🎂
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+// hearts
+
+function createHeart(){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="💖";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(4+Math.random()*5)+"s";
+
+
+document.body.appendChild(heart);
+
+
+setTimeout(()=>{
+
+heart.remove();
+
+},8000);
+
+
+}
+
+
+setInterval(createHeart,300);
+
+
+
+
+
+function showSurprise(){
+
+
+document.getElementById("card")
+.classList.add("hide");
+
+
+setTimeout(()=>{
+
+
+document.getElementById("surprisePage")
+.classList.add("show");
+
+
+},800);
+
+
+
+confetti();
+
+
+}
+
+
+
+
+
+
+function confetti(){
+
+
+for(let i=0;i<200;i++){
+
+
+let c=document.createElement("div");
+
+
+c.className="confetti";
+
+
+let colors=[
+"#ff4d6d",
+"#ffd93d",
+"#6bcB77",
+"#4d96ff",
+"#ff66c4"
+];
+
+
+c.style.background=
+colors[Math.floor(Math.random()*colors.length)];
+
+
+c.style.left=Math.random()*100+"vw";
+
+
+c.style.top="-20px";
+
+
+c.style.animationDuration=
+(2+Math.random()*3)+"s";
+
+
+document.body.appendChild(c);
+
+
+
+setTimeout(()=>{
+
+c.remove();
+
+},5000);
+
+
+}
+
+
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
